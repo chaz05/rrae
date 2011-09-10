@@ -7,3 +7,13 @@ PHY
 USB
 Camera
 pwrLed	20mA
+
+
+Parts List:
+* Eth Phy:
+	http://search.digikey.com/scripts/DkSearch/dksus.dll?Detail&name=576-3945-1-ND
+	http://www.micrel.com/_PDF/Ethernet/datasheets/ksz8021rnl_8031rnl.pdf
+* Processor
+	http://search.digikey.com/scripts/DkSearch/dksus.dll?Detail&name=497-11175-ND
+	http://www.st.com/internet/com/TECHNICAL_RESOURCES/TECHNICAL_LITERATURE/DATASHEET/CD00237391.pdf
+	http://www.st.com/internet/com/TECHNICAL_RESOURCES/TECHNICAL_LITERATURE/REFERENCE_MANUAL/CD00225773.pdf
