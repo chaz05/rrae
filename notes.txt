@@ -1,0 +1,9 @@
+Power Budget
+500mA MAX
+uP 	120mA
+dbgLeds	80mA
+buzzer
+PHY
+USB
+Camera
+pwrLed	20mA
