@@ -17,3 +17,38 @@ Parts List:
 	http://search.digikey.com/scripts/DkSearch/dksus.dll?Detail&name=497-11175-ND
 	http://www.st.com/internet/com/TECHNICAL_RESOURCES/TECHNICAL_LITERATURE/DATASHEET/CD00237391.pdf
 	http://www.st.com/internet/com/TECHNICAL_RESOURCES/TECHNICAL_LITERATURE/REFERENCE_MANUAL/CD00225773.pdf
+
+
+Features List:
+Main Board
+
+    High
+        Small board
+        Low power consumption
+        Fast computing power
+        Easy to use web interface
+        Cheap
+        Simple Design
+        uSD    
+        Ethernet
+        USB
+        USB OTG
+   	POE
+	802.3af
+	5v from usb if nothing else or from dedicated ps
+	Buzzer on PWM
+        
+
+    Medium
+        easy expandability
+        General I/O
+        CAN ports broken out
+
+    Low
+        camera
+        RTC for scheduling prints
+
+Breakout Board
+    High
+    5 Stepper Driver Ports
+    Medium
