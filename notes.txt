@@ -18,6 +18,11 @@ Parts List:
 	http://www.st.com/internet/com/TECHNICAL_RESOURCES/TECHNICAL_LITERATURE/DATASHEET/CD00237391.pdf
 	http://www.st.com/internet/com/TECHNICAL_RESOURCES/TECHNICAL_LITERATURE/REFERENCE_MANUAL/CD00225773.pdf
 
+* Connectors
+	RJ-45 w/ Leds
+		http://www.sparkfun.com/products/8534
+	
+
 
 Features List:
 Main Board
