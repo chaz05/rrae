@@ -1,5 +1,3 @@
-Poopsmith
-
 Power Budget
 500mA MAX
 uP 	120mA
