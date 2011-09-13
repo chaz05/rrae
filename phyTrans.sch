@@ -1,4 +1,4 @@
-EESchema Schematic File Version 2  date 9/12/2011 9:37:39 PM
+EESchema Schematic File Version 2  date 9/12/2011 9:50:10 PM
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -30,6 +30,7 @@ LIBS:atmel
 LIBS:contrib
 LIBS:valves
 LIBS:rrae
+LIBS:phyTrans-cache
 EELAYER 25  0
 EELAYER END
 $Descr A4 11700 8267
@@ -44,12 +45,25 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
+$Comp
+L GND #PWR?
+U 1 1 4E6EC4DB
+P 7550 2650
+F 0 "#PWR?" H 7550 2650 30  0001 C CNN
+F 1 "GND" H 7550 2580 30  0001 C CNN
+	1    7550 2650
+	1    0    0    -1  
+$EndComp
+Text Label 7450 3000 0    60   ~ 0
+LED_Signal
 Wire Wire Line
-	5550 2650 5550 2750
+	7450 3000 7450 2650
+Wire Wire Line
+	5650 2500 5650 2750
 Wire Wire Line
 	4650 3350 4750 3350
 Wire Wire Line
-	5650 2500 5650 2750
+	5550 2650 5550 2750
 $Comp
 L MAGJACK RJ45_?
 U 1 1 4E6EC1A4
