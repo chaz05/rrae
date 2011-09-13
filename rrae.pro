@@ -1,6 +1,6 @@
-update=9/10/2011 12:07:10 AM
+update=9/12/2011 8:32:49 PM
 version=1
-last_client=kicad
+last_client=eeschema
 [cvpcb]
 version=1
 NetITyp=0
@@ -77,9 +77,11 @@ LibName7=display
 LibName8=valves
 LibName9=led
 LibName10=dip_sockets
+[general]
+version=1
 [eeschema]
 version=1
-LibDir=../rrae
+LibDir=../AE
 NetFmt=1
 HPGLSpd=20
 HPGLDm=15
@@ -140,5 +142,3 @@ LibName28=atmel
 LibName29=contrib
 LibName30=valves
 LibName31=rrae
-[general]
-version=1
