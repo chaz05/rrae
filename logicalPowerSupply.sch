@@ -1,4 +1,4 @@
-EESchema Schematic File Version 2  date 9/10/2011 2:20:11 AM
+EESchema Schematic File Version 2  date 9/12/2011 9:56:45 PM
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -29,13 +29,14 @@ LIBS:opto
 LIBS:atmel
 LIBS:contrib
 LIBS:valves
+LIBS:logicalPowerSupply-cache
 EELAYER 25  0
 EELAYER END
 $Descr A4 11700 8267
 encoding utf-8
 Sheet 1 1
 Title ""
-Date "10 sep 2011"
+Date "13 sep 2011"
 Rev ""
 Comp ""
 Comment1 ""
@@ -43,6 +44,64 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
+$Comp
+L GNDPWR #PWR?
+U 1 1 4E6EC664
+P 4050 2700
+F 0 "#PWR?" H 4050 2750 40  0001 C CNN
+F 1 "GNDPWR" H 4050 2620 40  0000 C CNN
+	1    4050 2700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3500 1200 3500 1550
+Connection ~ 3500 1200
+Wire Wire Line
+	2850 1200 4150 1200
+Wire Wire Line
+	5400 1800 5400 2100
+Wire Wire Line
+	5000 2100 4900 2100
+Wire Wire Line
+	3000 2200 4900 2200
+Connection ~ 3000 2500
+Wire Wire Line
+	3000 2200 3000 2500
+Wire Wire Line
+	2850 2500 3150 2500
+Wire Wire Line
+	4350 2050 3500 2050
+Wire Wire Line
+	3650 2500 3750 2500
+Wire Wire Line
+	4350 1500 4350 1550
+Wire Wire Line
+	4050 2300 4050 2050
+Connection ~ 4050 2050
+Wire Wire Line
+	4550 1200 4900 1200
+Wire Wire Line
+	4900 1200 4900 1800
+Wire Wire Line
+	4900 1800 5000 1800
+Wire Wire Line
+	4900 2200 4900 2100
+Wire Wire Line
+	5400 1950 6000 1950
+Connection ~ 5400 1950
+Wire Wire Line
+	3000 2650 3000 2500
+Wire Wire Line
+	3000 3150 3000 3200
+$Comp
+L R R?
+U 1 1 4E6EC640
+P 3500 1800
+F 0 "R?" V 3580 1800 50  0000 C CNN
+F 1 "10k" V 3500 1800 50  0000 C CNN
+	1    3500 1800
+	1    0    0    -1  
+$EndComp
 $Comp
 L GNDPWR #PWR?
 U 1 1 4E6B0F6E
@@ -70,53 +129,13 @@ F 1 "150" V 5150 1200 50  0000 C CNN
 	1    5150 1200
 	0    -1   -1   0   
 $EndComp
-Wire Wire Line
-	4050 3350 4050 3400
-Wire Wire Line
-	4050 2850 4050 2700
-Connection ~ 5400 1950
-Wire Wire Line
-	5400 1950 6000 1950
-Wire Wire Line
-	4900 2200 4900 2100
-Wire Wire Line
-	5000 1800 4900 1800
-Wire Wire Line
-	4900 1800 4900 1200
-Wire Wire Line
-	4900 1200 4550 1200
-Connection ~ 4050 2050
-Wire Wire Line
-	4050 2300 4050 2050
-Wire Wire Line
-	4350 1500 4350 1550
-Wire Wire Line
-	3650 2500 3750 2500
-Wire Wire Line
-	4350 2050 3500 2050
-Wire Wire Line
-	2850 2500 3150 2500
-Wire Wire Line
-	3000 2500 3000 2200
-Connection ~ 3000 2500
-Wire Wire Line
-	3000 2200 4900 2200
-Wire Wire Line
-	4900 2100 5000 2100
-Wire Wire Line
-	5400 1800 5400 2100
-Wire Wire Line
-	2850 1200 4150 1200
-Connection ~ 3500 1200
-Wire Wire Line
-	3500 2050 3500 1200
 $Comp
 L LED D?
 U 1 1 4E6B0ED4
-P 4050 3600
-F 0 "D?" H 4050 3700 50  0000 C CNN
-F 1 "PS_LED" H 4050 3500 50  0000 C CNN
-	1    4050 3600
+P 3000 3400
+F 0 "D?" H 3000 3500 50  0000 C CNN
+F 1 "PS_LED" H 3000 3300 50  0000 C CNN
+	1    3000 3400
 	0    1    1    0   
 $EndComp
 Text Label 6000 1950 0    60   ~ 0
@@ -128,10 +147,10 @@ USB_PWR
 $Comp
 L GNDPWR #PWR?
 U 1 1 4E6B01CF
-P 4050 3800
-F 0 "#PWR?" H 4050 3850 40  0001 C CNN
-F 1 "GNDPWR" H 4050 3720 40  0000 C CNN
-	1    4050 3800
+P 3000 3600
+F 0 "#PWR?" H 3000 3650 40  0001 C CNN
+F 1 "GNDPWR" H 3000 3520 40  0000 C CNN
+	1    3000 3600
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -193,10 +212,10 @@ $EndComp
 $Comp
 L R R?
 U 1 1 4E6B0012
-P 4050 3100
-F 0 "R?" V 4130 3100 50  0000 C CNN
-F 1 "150" V 4050 3100 50  0000 C CNN
-	1    4050 3100
+P 3000 2900
+F 0 "R?" V 3080 2900 50  0000 C CNN
+F 1 "150" V 3000 2900 50  0000 C CNN
+	1    3000 2900
 	1    0    0    -1  
 $EndComp
 Text Label 1700 1200 0    60   ~ 0
