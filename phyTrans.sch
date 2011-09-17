@@ -1,4 +1,4 @@
-EESchema Schematic File Version 2  date 9/16/2011 7:37:49 PM
+EESchema Schematic File Version 2  date 9/16/2011 8:27:00 PM
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -45,6 +45,18 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
+$Comp
+L FILTER FB?
+U 1 1 4E73F4B4
+P 1950 2050
+F 0 "FB?" H 1950 2200 60  0000 C CNN
+F 1 "600 Ohm @ 100MHz" H 1950 1950 60  0000 C CNN
+F 4 "Digi-Key" H 1950 2050 60  0001 C CNN "Supplier"
+F 5 "P10189CT-ND" H 1950 2050 60  0001 C CNN "PN"
+F 6 "http://search.digikey.com/scripts/DkSearch/dksus.dll?Detail&name=P10189CT-ND" H 1950 2050 60  0001 C CNN "Link"
+	1    1950 2050
+	1    0    0    -1  
+$EndComp
 $Comp
 L GND #PWR?
 U 1 1 4E6EC4DB
