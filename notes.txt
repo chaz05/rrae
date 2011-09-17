@@ -17,6 +17,9 @@ Parts List:
 	http://search.digikey.com/scripts/DkSearch/dksus.dll?Detail&name=497-11175-ND
 	http://www.st.com/internet/com/TECHNICAL_RESOURCES/TECHNICAL_LITERATURE/DATASHEET/CD00237391.pdf
 	http://www.st.com/internet/com/TECHNICAL_RESOURCES/TECHNICAL_LITERATURE/REFERENCE_MANUAL/CD00225773.pdf
+* 3.3V Switching Vreg:
+	http://search.digikey.com/scripts/DkSearch/dksus.dll?Detail&name=296-21095-5-ND
+
 
 * Connectors
 	RJ-45 w/ Leds

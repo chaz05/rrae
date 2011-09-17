@@ -1,4 +1,4 @@
-update=9/17/2011 12:14:22 AM
+update=9/17/2011 1:18:45 AM
 version=1
 last_client=kicad
 [cvpcb]
@@ -79,7 +79,7 @@ LibName9=led
 LibName10=dip_sockets
 [eeschema]
 version=1
-LibDir=../AE
+LibDir=
 NetFmt=1
 HPGLSpd=20
 HPGLDm=15
