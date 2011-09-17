@@ -3,7 +3,7 @@ Power Budget
 uP 	120mA
 dbgLeds	80mA
 buzzer
-PHY
+PHY		50mA
 USB
 Camera
 pwrLed	20mA
