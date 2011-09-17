@@ -1,4 +1,4 @@
-EESchema Schematic File Version 2  date 9/12/2011 9:56:45 PM
+EESchema Schematic File Version 2  date 9/17/2011 1:18:32 AM
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -29,6 +29,7 @@ LIBS:opto
 LIBS:atmel
 LIBS:contrib
 LIBS:valves
+LIBS:rrae
 LIBS:logicalPowerSupply-cache
 EELAYER 25  0
 EELAYER END
@@ -36,7 +37,7 @@ $Descr A4 11700 8267
 encoding utf-8
 Sheet 1 1
 Title ""
-Date "13 sep 2011"
+Date "17 sep 2011"
 Rev ""
 Comp ""
 Comment1 ""
@@ -44,15 +45,22 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-$Comp
-L GNDPWR #PWR?
-U 1 1 4E6EC664
-P 4050 2700
-F 0 "#PWR?" H 4050 2750 40  0001 C CNN
-F 1 "GNDPWR" H 4050 2620 40  0000 C CNN
-	1    4050 2700
-	1    0    0    -1  
-$EndComp
+Wire Wire Line
+	4700 4350 4500 4350
+Wire Wire Line
+	5000 4850 5000 4750
+Connection ~ 5000 4750
+Wire Wire Line
+	7650 4150 7250 4150
+Connection ~ 7250 4500
+Wire Wire Line
+	7400 4900 7400 4500
+Wire Wire Line
+	7400 4500 7250 4500
+Wire Wire Line
+	5300 4350 5750 4350
+Wire Wire Line
+	7250 4450 7250 4550
 Wire Wire Line
 	3500 1200 3500 1550
 Connection ~ 3500 1200
@@ -63,10 +71,8 @@ Wire Wire Line
 Wire Wire Line
 	5000 2100 4900 2100
 Wire Wire Line
-	3000 2200 4900 2200
+	4900 2200 3000 2200
 Connection ~ 3000 2500
-Wire Wire Line
-	3000 2200 3000 2500
 Wire Wire Line
 	2850 2500 3150 2500
 Wire Wire Line
@@ -90,9 +96,141 @@ Wire Wire Line
 	5400 1950 6000 1950
 Connection ~ 5400 1950
 Wire Wire Line
-	3000 2650 3000 2500
+	3000 2200 3000 2650
 Wire Wire Line
 	3000 3150 3000 3200
+Wire Wire Line
+	5750 4550 5650 4550
+Wire Wire Line
+	5650 4550 5650 4600
+Wire Wire Line
+	5750 4750 5550 4750
+Wire Wire Line
+	5550 4750 5550 4350
+Connection ~ 5550 4350
+Wire Wire Line
+	7250 4850 7400 4850
+Connection ~ 7400 4850
+Wire Wire Line
+	5300 4750 4700 4750
+$Comp
+L GND #PWR?
+U 1 1 4E743AA5
+P 5000 4850
+F 0 "#PWR?" H 5000 4850 30  0001 C CNN
+F 1 "GND" H 5000 4780 30  0001 C CNN
+	1    5000 4850
+	1    0    0    -1  
+$EndComp
+$Comp
+L INDUCTOR L?
+U 1 1 4E7439DF
+P 5000 4350
+F 0 "L?" V 4950 4350 40  0000 C CNN
+F 1 "330nH" V 5100 4350 40  0000 C CNN
+F 4 "Digi-Key" H 5000 4350 60  0001 C CNN "Supplier"
+F 5 "PCD1435CT-ND" H 5000 4350 60  0001 C CNN "PN"
+	1    5000 4350
+	0    -1   -1   0   
+$EndComp
+$Comp
+L DIODESCH D?
+U 1 1 4E7437C8
+P 5300 4550
+F 0 "D?" H 5300 4650 40  0000 C CNN
+F 1 "DIODESCH" H 5300 4450 40  0000 C CNN
+F 4 "Digi-Key" H 5300 4550 60  0001 C CNN "Supplier"
+F 5 "568-4117-1-ND" H 5300 4550 60  0001 C CNN "PN"
+	1    5300 4550
+	0    -1   -1   0   
+$EndComp
+$Comp
+L CP1 C?
+U 1 1 4E7435F7
+P 4700 4550
+F 0 "C?" H 4750 4650 50  0000 L CNN
+F 1 "220uF" H 4750 4450 50  0000 L CNN
+F 4 "Digi-Key" H 4700 4550 60  0001 C CNN "Supplier"
+F 5 "P5112-ND" H 4700 4550 60  0001 C CNN "PN"
+	1    4700 4550
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 4E743381
+P 7650 4550
+F 0 "#PWR?" H 7650 4550 30  0001 C CNN
+F 1 "GND" H 7650 4480 30  0001 C CNN
+	1    7650 4550
+	1    0    0    -1  
+$EndComp
+Text Label 7650 4150 0    60   ~ 0
+PWR_IN
+$Comp
+L CP1 C?
+U 1 1 4E7432CB
+P 7650 4350
+F 0 "C?" H 7700 4450 50  0000 L CNN
+F 1 "47uF" H 7700 4250 50  0000 L CNN
+F 4 "Digi-Key" H 7650 4350 60  0001 C CNN "Supplier"
+F 5 "493-1896-ND" H 7650 4350 60  0001 C CNN "PN"
+	1    7650 4350
+	-1   0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 4E742FEE
+P 5650 4600
+F 0 "#PWR?" H 5650 4600 30  0001 C CNN
+F 1 "GND" H 5650 4530 30  0001 C CNN
+	1    5650 4600
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 4E742F8B
+P 7400 4900
+F 0 "#PWR?" H 7400 4900 30  0001 C CNN
+F 1 "GND" H 7400 4830 30  0001 C CNN
+	1    7400 4900
+	1    0    0    -1  
+$EndComp
+$Comp
+L +3.3V #PWR?
+U 1 1 4E742F09
+P 4500 4350
+F 0 "#PWR?" H 4500 4310 30  0001 C CNN
+F 1 "+3.3V" H 4500 4460 30  0000 C CNN
+	1    4500 4350
+	1    0    0    -1  
+$EndComp
+NoConn ~ 5750 4150
+NoConn ~ 5750 4250
+NoConn ~ 5750 4450
+NoConn ~ 5750 4650
+NoConn ~ 5750 4850
+NoConn ~ 7250 4750
+NoConn ~ 7250 4650
+NoConn ~ 7250 4350
+NoConn ~ 7250 4250
+$Comp
+L TL2575 U?
+U 1 1 4E742E92
+P 6500 4500
+F 0 "U?" H 6100 5100 50  0000 C CNN
+F 1 "TL2575" H 6500 4500 50  0000 C CNN
+	1    6500 4500
+	1    0    0    -1  
+$EndComp
+$Comp
+L GNDPWR #PWR?
+U 1 1 4E6EC664
+P 4050 2700
+F 0 "#PWR?" H 4050 2750 40  0001 C CNN
+F 1 "GNDPWR" H 4050 2620 40  0000 C CNN
+	1    4050 2700
+	1    0    0    -1  
+$EndComp
 $Comp
 L R R?
 U 1 1 4E6EC640
