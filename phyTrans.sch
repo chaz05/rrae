@@ -1,4 +1,4 @@
-EESchema Schematic File Version 2  date 9/12/2011 9:50:10 PM
+EESchema Schematic File Version 2  date 9/16/2011 7:37:49 PM
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -37,7 +37,7 @@ $Descr A4 11700 8267
 encoding utf-8
 Sheet 1 1
 Title "noname.sch"
-Date "13 sep 2011"
+Date "17 sep 2011"
 Rev ""
 Comp ""
 Comment1 ""
@@ -48,16 +48,16 @@ $EndDescr
 $Comp
 L GND #PWR?
 U 1 1 4E6EC4DB
-P 7550 2650
-F 0 "#PWR?" H 7550 2650 30  0001 C CNN
-F 1 "GND" H 7550 2580 30  0001 C CNN
-	1    7550 2650
-	1    0    0    -1  
+P 8850 1100
+F 0 "#PWR?" H 8850 1100 30  0001 C CNN
+F 1 "GND" H 8850 1030 30  0001 C CNN
+	1    8850 1100
+	-1   0    0    1   
 $EndComp
-Text Label 7450 3000 0    60   ~ 0
+Text Label 8950 750  2    60   ~ 0
 LED_Signal
 Wire Wire Line
-	7450 3000 7450 2650
+	8950 750  8950 1100
 Wire Wire Line
 	5650 2500 5650 2750
 Wire Wire Line
@@ -67,11 +67,11 @@ Wire Wire Line
 $Comp
 L MAGJACK RJ45_?
 U 1 1 4E6EC1A4
-P 7800 2150
-F 0 "RJ45_?" H 7800 2550 60  0000 C CNN
-F 1 "MAGJACK" H 7800 2650 60  0000 C CNN
-	1    7800 2150
-	1    0    0    -1  
+P 8600 1600
+F 0 "RJ45_?" H 8600 2000 60  0000 C CNN
+F 1 "MAGJACK" H 8600 2100 60  0000 C CNN
+	1    8600 1600
+	-1   0    0    1   
 $EndComp
 Text Label 5650 2500 2    60   ~ 0
 LED_Signal
