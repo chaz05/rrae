@@ -1,4 +1,4 @@
-EESchema Schematic File Version 2  date 9/10/2011 12:16:11 AM
+EESchema Schematic File Version 2  date 9/16/2011 8:37:22 PM
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -31,7 +31,7 @@ LIBS:contrib
 LIBS:valves
 LIBS:rrae
 LIBS:rrae-cache
-EELAYER 43  0
+EELAYER 25  0
 EELAYER END
 $Descr A4 11700 8267
 encoding utf-8
