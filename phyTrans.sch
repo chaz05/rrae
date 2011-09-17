@@ -1,4 +1,4 @@
-EESchema Schematic File Version 2  date 9/16/2011 8:27:00 PM
+EESchema Schematic File Version 2  date 9/16/2011 8:36:26 PM
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -79,10 +79,10 @@ Wire Wire Line
 $Comp
 L MAGJACK RJ45_?
 U 1 1 4E6EC1A4
-P 8600 1600
-F 0 "RJ45_?" H 8600 2000 60  0000 C CNN
-F 1 "MAGJACK" H 8600 2100 60  0000 C CNN
-	1    8600 1600
+P 8600 1950
+F 0 "RJ45_?" H 8600 1900 60  0000 C CNN
+F 1 "MAGJACK" H 8600 2000 60  0000 C CNN
+	1    8600 1950
 	-1   0    0    1   
 $EndComp
 Text Label 5650 2500 2    60   ~ 0
