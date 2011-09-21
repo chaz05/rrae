@@ -1,4 +1,4 @@
-EESchema Schematic File Version 2  date 9/17/2011 1:18:32 AM
+EESchema Schematic File Version 2  date 9/20/2011 9:07:33 PM
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -29,7 +29,6 @@ LIBS:opto
 LIBS:atmel
 LIBS:contrib
 LIBS:valves
-LIBS:rrae
 LIBS:logicalPowerSupply-cache
 EELAYER 25  0
 EELAYER END
@@ -37,7 +36,7 @@ $Descr A4 11700 8267
 encoding utf-8
 Sheet 1 1
 Title ""
-Date "17 sep 2011"
+Date "21 sep 2011"
 Rev ""
 Comp ""
 Comment1 ""
@@ -45,6 +44,8 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
+Text Notes 7850 4300 0    60   ~ 0
+Place input cap \nas close to IC \nas possible
 Wire Wire Line
 	4700 4350 4500 4350
 Wire Wire Line
@@ -127,9 +128,9 @@ L INDUCTOR L?
 U 1 1 4E7439DF
 P 5000 4350
 F 0 "L?" V 4950 4350 40  0000 C CNN
-F 1 "330nH" V 5100 4350 40  0000 C CNN
+F 1 "330uH" V 5100 4350 40  0000 C CNN
 F 4 "Digi-Key" H 5000 4350 60  0001 C CNN "Supplier"
-F 5 "PCD1435CT-ND" H 5000 4350 60  0001 C CNN "PN"
+F 5 "SRR1260-331KCT-ND" H 5000 4350 60  0001 C CNN "PN"
 	1    5000 4350
 	0    -1   -1   0   
 $EndComp
@@ -140,7 +141,7 @@ P 5300 4550
 F 0 "D?" H 5300 4650 40  0000 C CNN
 F 1 "DIODESCH" H 5300 4450 40  0000 C CNN
 F 4 "Digi-Key" H 5300 4550 60  0001 C CNN "Supplier"
-F 5 "568-4117-1-ND" H 5300 4550 60  0001 C CNN "PN"
+F 5 "B340A-FDICT-ND" H 5300 4550 60  0001 C CNN "PN"
 	1    5300 4550
 	0    -1   -1   0   
 $EndComp
@@ -153,7 +154,7 @@ F 1 "220uF" H 4750 4450 50  0000 L CNN
 F 4 "Digi-Key" H 4700 4550 60  0001 C CNN "Supplier"
 F 5 "P5112-ND" H 4700 4550 60  0001 C CNN "PN"
 	1    4700 4550
-	1    0    0    -1  
+	-1   0    0    -1  
 $EndComp
 $Comp
 L GND #PWR?
@@ -171,9 +172,9 @@ L CP1 C?
 U 1 1 4E7432CB
 P 7650 4350
 F 0 "C?" H 7700 4450 50  0000 L CNN
-F 1 "47uF" H 7700 4250 50  0000 L CNN
+F 1 "100uF" H 7700 4250 50  0000 L CNN
 F 4 "Digi-Key" H 7650 4350 60  0001 C CNN "Supplier"
-F 5 "493-1896-ND" H 7650 4350 60  0001 C CNN "PN"
+F 5 "P5165-ND" H 7650 4350 60  0001 C CNN "PN"
 	1    7650 4350
 	-1   0    0    -1  
 $EndComp
