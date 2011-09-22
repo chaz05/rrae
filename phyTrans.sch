@@ -1,4 +1,4 @@
-EESchema Schematic File Version 2  date 9/16/2011 11:02:28 PM
+EESchema Schematic File Version 2  date 9/21/2011 8:12:33 PM
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -37,7 +37,7 @@ $Descr A4 11700 8267
 encoding utf-8
 Sheet 1 1
 Title "noname.sch"
-Date "17 sep 2011"
+Date "22 sep 2011"
 Rev ""
 Comp ""
 Comment1 ""
@@ -46,16 +46,34 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 Wire Wire Line
+	7950 3650 6850 3650
+Wire Wire Line
+	5950 4900 5950 4250
+Wire Wire Line
+	5750 4700 5750 4250
+Wire Wire Line
+	4500 3750 4750 3750
+Wire Wire Line
+	4500 3550 4750 3550
+Wire Wire Line
+	7250 3550 6850 3550
+Wire Wire Line
+	6850 3350 7250 3350
+Wire Wire Line
+	7250 3450 6850 3450
+Wire Wire Line
+	5650 4250 5650 4600
+Wire Wire Line
+	4750 3450 4500 3450
+Wire Wire Line
+	5950 2200 5950 2750
+Wire Wire Line
 	5450 2650 5450 2750
 Wire Wire Line
 	5650 2400 5650 2750
 Wire Wire Line
-	7250 4150 7250 4050
-Wire Wire Line
-	7250 3650 6850 3650
-Connection ~ 4150 3350
-Wire Wire Line
-	3900 3350 4750 3350
+	7950 4150 7950 4050
+Connection ~ 3700 3350
 Wire Wire Line
 	4750 3250 4400 3250
 Connection ~ 4400 2850
@@ -64,35 +82,89 @@ Wire Wire Line
 Wire Wire Line
 	4150 2850 4650 2850
 Wire Wire Line
-	8950 750  8950 1100
+	3950 3750 3700 3750
 Wire Wire Line
-	4400 3750 4150 3750
+	3700 3750 3700 3850
 Wire Wire Line
-	4150 3750 4150 3850
+	2550 3350 2750 3350
 Wire Wire Line
-	3000 3350 3200 3350
-Wire Wire Line
-	7250 4050 7000 4050
+	7950 4050 7700 4050
 Wire Wire Line
 	5750 2650 5750 2750
 Wire Wire Line
 	5550 2550 5550 2750
+Wire Wire Line
+	5850 2300 5850 2750
+Wire Wire Line
+	6050 2050 6050 2750
+Wire Wire Line
+	5550 4250 5550 4500
+Wire Wire Line
+	6850 3250 7250 3250
+Wire Wire Line
+	7250 3750 6850 3750
+Wire Wire Line
+	4500 3650 4750 3650
+Wire Wire Line
+	4750 3350 3450 3350
+Wire Wire Line
+	5850 4800 5850 4250
+Wire Wire Line
+	6050 5000 6050 4250
+Text Label 7250 3250 2    60   ~ 0
+INTRP
+Text Label 7250 3350 2    60   ~ 0
+RXER
+Text Label 7250 3450 2    60   ~ 0
+REF_CLK
+Text Label 7250 3550 2    60   ~ 0
+CRS_DV
+Text Label 7250 3750 2    60   ~ 0
+RXD0
+Text Label 6050 5000 2    60   ~ 0
+RXD1
+Text Label 5950 4900 2    60   ~ 0
+MDC
+Text Label 5850 4800 2    60   ~ 0
+MDID
+Text Label 5750 4700 2    60   ~ 0
+REXT
+Text Label 5650 4600 2    60   ~ 0
+XI
+Text Label 5550 4500 2    60   ~ 0
+XD
+Text Label 4500 3750 0    60   ~ 0
+TXP
+Text Label 4500 3650 0    60   ~ 0
+TXM
+Text Label 4500 3550 0    60   ~ 0
+RXP
+Text Label 4500 3450 0    60   ~ 0
+RXM
+Text Label 4500 3450 0    60   ~ 0
+RXM
+Text Label 6050 2050 2    60   ~ 0
+TXEN
+Text Label 5950 2200 2    60   ~ 0
+TXD2
+Text Label 5850 2300 2    60   ~ 0
+TXD1
 $Comp
 L GND #PWR?
 U 1 1 4E741BA5
-P 7250 4150
-F 0 "#PWR?" H 7250 4150 30  0001 C CNN
-F 1 "GND" H 7250 4080 30  0001 C CNN
-	1    7250 4150
+P 7950 4150
+F 0 "#PWR?" H 7950 4150 30  0001 C CNN
+F 1 "GND" H 7950 4080 30  0001 C CNN
+	1    7950 4150
 	1    0    0    -1  
 $EndComp
 $Comp
 L GND #PWR?
 U 1 1 4E741B4C
-P 4150 3850
-F 0 "#PWR?" H 4150 3850 30  0001 C CNN
-F 1 "GND" H 4150 3780 30  0001 C CNN
-	1    4150 3850
+P 3700 3850
+F 0 "#PWR?" H 3700 3850 30  0001 C CNN
+F 1 "GND" H 3700 3780 30  0001 C CNN
+	1    3700 3850
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -119,25 +191,25 @@ $EndComp
 $Comp
 L C C?
 U 1 1 4E741A63
-P 4150 3550
-F 0 "C?" H 4200 3650 50  0000 L CNN
-F 1 "22uF" H 4200 3450 50  0000 L CNN
-F 4 "Digi-Key" H 4150 3550 60  0001 C CNN "Supplier"
-F 5 "445-1422-1-ND" H 4150 3550 60  0001 C CNN "PN"
-F 6 "http://search.digikey.com/scripts/DkSearch/dksus.dll?Detail&name=445-1422-1-ND" H 4150 3550 60  0001 C CNN "Link"
-	1    4150 3550
+P 3700 3550
+F 0 "C?" H 3750 3650 50  0000 L CNN
+F 1 "22uF" H 3750 3450 50  0000 L CNN
+F 4 "Digi-Key" H 3700 3550 60  0001 C CNN "Supplier"
+F 5 "445-1422-1-ND" H 3700 3550 60  0001 C CNN "PN"
+F 6 "http://search.digikey.com/scripts/DkSearch/dksus.dll?Detail&name=445-1422-1-ND" H 3700 3550 60  0001 C CNN "Link"
+	1    3700 3550
 	1    0    0    -1  
 $EndComp
 $Comp
 L C C?
 U 1 1 4E741495
-P 7000 3850
-F 0 "C?" H 7050 3950 50  0000 L CNN
-F 1 "22uF" H 7050 3750 50  0000 L CNN
-F 4 "Digi-Key" H 7000 3850 60  0001 C CNN "Supplier"
-F 5 "445-1422-1-ND" H 7000 3850 60  0001 C CNN "PN"
-F 6 "http://search.digikey.com/scripts/DkSearch/dksus.dll?Detail&name=445-1422-1-ND" H 7000 3850 60  0001 C CNN "Link"
-	1    7000 3850
+P 7700 3850
+F 0 "C?" H 7750 3950 50  0000 L CNN
+F 1 "22uF" H 7750 3750 50  0000 L CNN
+F 4 "Digi-Key" H 7700 3850 60  0001 C CNN "Supplier"
+F 5 "445-1422-1-ND" H 7700 3850 60  0001 C CNN "PN"
+F 6 "http://search.digikey.com/scripts/DkSearch/dksus.dll?Detail&name=445-1422-1-ND" H 7700 3850 60  0001 C CNN "Link"
+	1    7700 3850
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -155,58 +227,38 @@ $EndComp
 $Comp
 L C C?
 U 1 1 4E741480
-P 4400 3550
-F 0 "C?" H 4450 3650 50  0000 L CNN
-F 1 "0.1uF" H 4450 3450 50  0000 L CNN
-F 4 "Digi-Key" H 4400 3550 60  0001 C CNN "Supplier"
-F 5 "490-1673-1-ND" H 4400 3550 60  0001 C CNN "PN"
-F 6 "http://search.digikey.com/scripts/DkSearch/dksus.dll?Detail&name=490-1673-1-ND" H 4400 3550 60  0001 C CNN "Link"
-	1    4400 3550
+P 3950 3550
+F 0 "C?" H 4000 3650 50  0000 L CNN
+F 1 "0.1uF" H 4000 3450 50  0000 L CNN
+F 4 "Digi-Key" H 3950 3550 60  0001 C CNN "Supplier"
+F 5 "490-1673-1-ND" H 3950 3550 60  0001 C CNN "PN"
+F 6 "http://search.digikey.com/scripts/DkSearch/dksus.dll?Detail&name=490-1673-1-ND" H 3950 3550 60  0001 C CNN "Link"
+	1    3950 3550
 	1    0    0    -1  
 $EndComp
 $Comp
 L C C?
 U 1 1 4E740C09
-P 7250 3850
-F 0 "C?" H 7300 3950 50  0000 L CNN
-F 1 "0.1uF" H 7300 3750 50  0000 L CNN
-F 4 "Digi-Key" H 7250 3850 60  0001 C CNN "Supplier"
-F 5 "490-1673-1-ND" H 7250 3850 60  0001 C CNN "PN"
-F 6 "http://search.digikey.com/scripts/DkSearch/dksus.dll?Detail&name=490-1673-1-ND" H 7250 3850 60  0001 C CNN "Link"
-	1    7250 3850
+P 7950 3850
+F 0 "C?" H 8000 3950 50  0000 L CNN
+F 1 "0.1uF" H 8000 3750 50  0000 L CNN
+F 4 "Digi-Key" H 7950 3850 60  0001 C CNN "Supplier"
+F 5 "490-1673-1-ND" H 7950 3850 60  0001 C CNN "PN"
+F 6 "http://search.digikey.com/scripts/DkSearch/dksus.dll?Detail&name=490-1673-1-ND" H 7950 3850 60  0001 C CNN "Link"
+	1    7950 3850
 	1    0    0    -1  
 $EndComp
 $Comp
 L FILTER FB?
 U 1 1 4E73F4B4
-P 3550 3350
-F 0 "FB?" H 3550 3500 60  0000 C CNN
-F 1 "600 Ohm @ 100MHz" H 3550 3250 60  0000 C CNN
-F 4 "Digi-Key" H 3550 3350 60  0001 C CNN "Supplier"
-F 5 "P10189CT-ND" H 3550 3350 60  0001 C CNN "PN"
-F 6 "http://search.digikey.com/scripts/DkSearch/dksus.dll?Detail&name=P10189CT-ND" H 3550 3350 60  0001 C CNN "Link"
-	1    3550 3350
+P 3100 3350
+F 0 "FB?" H 3100 3500 60  0000 C CNN
+F 1 "600 Ohm @ 100MHz" H 3100 3250 60  0000 C CNN
+F 4 "Digi-Key" H 3100 3350 60  0001 C CNN "Supplier"
+F 5 "P10189CT-ND" H 3100 3350 60  0001 C CNN "PN"
+F 6 "http://search.digikey.com/scripts/DkSearch/dksus.dll?Detail&name=P10189CT-ND" H 3100 3350 60  0001 C CNN "Link"
+	1    3100 3350
 	1    0    0    -1  
-$EndComp
-$Comp
-L GND #PWR?
-U 1 1 4E6EC4DB
-P 8850 1100
-F 0 "#PWR?" H 8850 1100 30  0001 C CNN
-F 1 "GND" H 8850 1030 30  0001 C CNN
-	1    8850 1100
-	-1   0    0    1   
-$EndComp
-Text Label 8950 750  2    60   ~ 0
-LED_Signal
-$Comp
-L MAGJACK RJ45_?
-U 1 1 4E6EC1A4
-P 8600 1600
-F 0 "RJ45_?" H 8600 2000 60  0000 C CNN
-F 1 "MAGJACK" H 8600 2100 60  0000 C CNN
-	1    8600 1600
-	-1   0    0    1   
 $EndComp
 Text Label 5650 2400 2    60   ~ 0
 LED_Signal
@@ -233,10 +285,10 @@ $EndComp
 $Comp
 L +3.3V #PWR?
 U 1 1 4E6B9310
-P 3000 3350
-F 0 "#PWR?" H 3000 3310 30  0001 C CNN
-F 1 "+3.3V" H 3000 3460 30  0000 C CNN
-	1    3000 3350
+P 2550 3350
+F 0 "#PWR?" H 2550 3310 30  0001 C CNN
+F 1 "+3.3V" H 2550 3460 30  0000 C CNN
+	1    2550 3350
 	1    0    0    -1  
 $EndComp
 $Comp
