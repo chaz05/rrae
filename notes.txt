@@ -1,3 +1,7 @@
+TODO: 
+	[ ] Reset Schematic.  Example in the Eth Phy Datasheet
+
+
 Power Budget
 500mA MAX
 uP 	120mA

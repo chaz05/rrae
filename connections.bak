@@ -1,4 +1,4 @@
-EESchema Schematic File Version 2  date 9/17/2011 1:31:27 AM
+EESchema Schematic File Version 2  date 9/24/2011 1:49:19 PM
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -30,14 +30,14 @@ LIBS:atmel
 LIBS:contrib
 LIBS:valves
 LIBS:rrae
-LIBS:connections-cache
+LIBS:rrae-cache
 EELAYER 25  0
 EELAYER END
 $Descr A4 11700 8267
 encoding utf-8
-Sheet 1 1
+Sheet 3 5
 Title "noname.sch"
-Date "17 sep 2011"
+Date "24 sep 2011"
 Rev ""
 Comp ""
 Comment1 ""
@@ -45,70 +45,42 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-Text Label 7850 2200 0    60   ~ 0
-eth0_10
-Text Label 7850 2100 0    60   ~ 0
-eth0_9
-Text Label 7850 2000 0    60   ~ 0
-eth0_8
-Text Label 7850 1900 0    60   ~ 0
-eth0_7
-Text Label 7850 1800 0    60   ~ 0
-eth0_6
-Text Label 7850 1700 0    60   ~ 0
-eth0_5
-Text Label 7850 1600 0    60   ~ 0
-eth0_4
-Text Label 7850 1500 0    60   ~ 0
-eth0_3
-Text Label 7850 1400 0    60   ~ 0
-eth0_2
-Text Label 7850 1300 0    60   ~ 0
-eth0_1
-Text Label 7850 1200 0    60   ~ 0
-eth0_0
-Wire Wire Line
-	8100 2200 7850 2200
-Wire Wire Line
-	8100 2100 7850 2100
-Wire Wire Line
-	8100 2000 7850 2000
-Wire Wire Line
-	8100 1900 7850 1900
-Wire Wire Line
-	8100 1800 7850 1800
-Wire Wire Line
-	8100 1700 7850 1700
-Wire Wire Line
-	8100 1600 7850 1600
-Wire Wire Line
-	8100 1500 7850 1500
-Wire Wire Line
-	8100 1400 7850 1400
-Wire Wire Line
-	8100 1300 7850 1300
-Wire Wire Line
-	8100 1200 7850 1200
-Wire Wire Line
-	5550 1900 5100 1900
-Wire Wire Line
-	5550 1800 5100 1800
-Wire Wire Line
-	5550 1700 5100 1700
-Wire Bus Line
-	5000 1800 5000 1600
-Entry Wire Line
-	5000 1800 5100 1900
-Entry Wire Line
-	5000 1700 5100 1800
-Entry Wire Line
-	5000 1600 5100 1700
-Text Label 5100 1900 0    60   ~ 0
-USB0_2
-Text Label 5100 1800 0    60   ~ 0
-USB0_1
-Text Label 5100 1700 0    60   ~ 0
-USB0_0
+NoConn ~ 8100 2200
+NoConn ~ 8100 2100
+Text HLabel 8100 2000 0    60   Output ~ 0
+Phy_LedGreen-
+Text HLabel 8100 1900 0    60   Input ~ 0
+Phy_LedGreen+
+$Comp
+L DGND #PWR?
+U 1 1 4E7E1857
+P 8100 1800
+F 0 "#PWR?" H 8100 1800 40  0001 C CNN
+F 1 "DGND" H 8100 1730 40  0000 C CNN
+	1    8100 1800
+	0    1    1    0   
+$EndComp
+NoConn ~ 8100 1600
+NoConn ~ 8100 1600
+NoConn ~ 8100 1300
+NoConn ~ 8100 1300
+Text HLabel 8100 1700 0    60   BiDi ~ 0
+Phy_recv-
+Text HLabel 8100 1500 0    60   BiDi ~ 0
+Phy_recv+
+Text HLabel 8100 1400 0    60   BiDi ~ 0
+Phy_trans-
+Text HLabel 8100 1200 0    60   BiDi ~ 0
+Phy_trans+
+$Comp
+L GNDPWR #PWR?
+U 1 1 4E743F0C
+P 9800 2100
+F 0 "#PWR?" H 9800 2150 40  0001 C CNN
+F 1 "GNDPWR" H 9800 2020 40  0000 C CNN
+	1    9800 2100
+	1    0    0    -1  
+$EndComp
 $Comp
 L +5V #PWR?
 U 1 1 4E743DEE
