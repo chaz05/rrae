@@ -1,4 +1,4 @@
-EESchema Schematic File Version 2  date 9/24/2011 1:49:25 PM
+EESchema Schematic File Version 2  date 9/26/2011 6:52:56 PM
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -35,179 +35,276 @@ EELAYER 25  0
 EELAYER END
 $Descr A4 11700 8267
 encoding utf-8
-Sheet 2 5
-Title "noname.sch"
-Date "24 sep 2011"
-Rev ""
+Sheet 2 4
+Title "Ethernet     Author: tadams"
+Date "26 sep 2011"
+Rev "0.2"
 Comp ""
 Comment1 ""
 Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-Text Notes 700  800  0    100  ~ 20
-External Connections
+$Comp
+L +3.3V #PWR?
+U 1 1 4E811046
+P 8250 3650
+F 0 "#PWR?" H 8250 3610 30  0001 C CNN
+F 1 "+3.3V" H 8250 3760 30  0000 C CNN
+	1    8250 3650
+	1    0    0    -1  
+$EndComp
+Connection ~ 7950 3650
+Wire Wire Line
+	8250 3650 6850 3650
 Wire Notes Line
-	600  2900 600  600 
+	9600 7100 11100 7100
 Wire Notes Line
-	600  2900 3300 2900
+	9600 7100 9600 5200
 Wire Notes Line
-	3300 2900 3300 600 
+	9600 5200 11100 5200
 Wire Notes Line
-	3300 600  600  600 
+	11100 5200 11100 7100
 Wire Wire Line
-	1750 1950 1200 1950
+	5550 4500 5550 4250
 Wire Wire Line
-	1750 1850 1200 1850
-Wire Wire Line
-	1750 1750 1200 1750
-Wire Wire Line
-	1200 1050 1750 1050
+	7250 3450 6850 3450
 Wire Notes Line
-	3300 3850 3300 5900
+	11100 2700 11100 600 
 Wire Notes Line
-	3300 3850 600  3850
+	11100 2700 7500 2700
 Wire Notes Line
-	600  3850 600  5900
+	7500 2700 7500 600 
 Wire Notes Line
-	600  5900 3300 5900
-Wire Wire Line
-	1900 4350 2250 4350
-Wire Wire Line
-	1900 4650 2250 4650
-Wire Wire Line
-	7350 6600 8050 6600
-Wire Notes Line
-	3500 7450 3600 7450
-Wire Notes Line
-	3600 7400 3500 7400
-Wire Notes Line
-	3600 7400 3550 7450
-Wire Notes Line
-	3500 7400 3550 7450
-Wire Notes Line
-	3550 7350 3550 7400
-Connection ~ 3250 7600
-Wire Wire Line
-	3550 7600 2700 7600
-Connection ~ 3400 6850
-Wire Notes Line
-	3950 7700 3950 6150
-Wire Notes Line
-	3950 7700 600  7700
-Wire Notes Line
-	600  7700 600  6150
-Wire Notes Line
-	600  6150 3950 6150
-Wire Wire Line
-	4200 7200 4200 6900
-Wire Wire Line
-	4700 7000 4950 7000
-Wire Wire Line
-	4250 3750 4750 3750
-Wire Wire Line
-	4250 3450 4750 3450
-Wire Wire Line
-	7950 3650 6850 3650
-Wire Wire Line
-	5950 4900 5950 4250
-Wire Wire Line
-	5750 4700 5750 4250
-Wire Wire Line
-	7250 3550 6850 3550
-Wire Wire Line
-	6850 3350 7250 3350
-Wire Wire Line
-	5650 4250 5650 4600
-Wire Wire Line
-	5950 2200 5950 2750
-Wire Wire Line
-	5450 2650 5450 2750
-Wire Wire Line
-	5650 2400 5650 2750
-Wire Wire Line
-	7950 4150 7950 4050
-Connection ~ 3700 3350
-Wire Wire Line
-	4750 3250 4400 3250
-Connection ~ 4400 2850
-Wire Wire Line
-	4150 2950 4150 2850
-Wire Wire Line
-	4150 2850 4650 2850
-Wire Wire Line
-	3950 3750 3700 3750
-Wire Wire Line
-	3700 3750 3700 3850
-Wire Wire Line
-	2550 3350 2750 3350
-Wire Wire Line
-	7950 4050 7700 4050
-Wire Wire Line
-	5750 2650 5750 2750
-Wire Wire Line
-	5550 2550 5550 2750
-Wire Wire Line
-	5850 2300 5850 2750
-Wire Wire Line
-	6050 2050 6050 2750
-Wire Wire Line
-	6850 3250 7250 3250
-Wire Wire Line
-	7250 3750 6850 3750
-Wire Wire Line
-	4750 3350 3450 3350
-Wire Wire Line
-	5850 4800 5850 4250
-Wire Wire Line
-	6050 5000 6050 4250
-Wire Wire Line
-	4250 3550 4750 3550
-Wire Wire Line
-	4250 3650 4750 3650
-Wire Notes Line
-	4050 6150 4050 7700
-Connection ~ 4200 7000
-Wire Wire Line
-	4700 7200 4950 7200
-Wire Wire Line
-	3250 6850 3550 6850
-Wire Wire Line
-	3250 7350 3250 7600
-Wire Notes Line
-	3550 7450 3550 7600
-Wire Wire Line
-	750  7200 1300 7200
-Wire Wire Line
-	2250 4750 1900 4750
-Wire Wire Line
-	1900 5000 2250 5000
-Wire Wire Line
-	1900 5100 2250 5100
-Wire Wire Line
-	1900 4450 2250 4450
-Wire Notes Line
-	4050 6150 5800 6150
-Wire Notes Line
-	5800 6150 5800 7700
-Wire Notes Line
-	5800 7700 4050 7700
-Wire Wire Line
-	1750 1150 1200 1150
-Wire Wire Line
-	1750 1250 1200 1250
-Wire Wire Line
-	1750 1350 1200 1350
-Wire Wire Line
-	1750 1450 1200 1450
+	7500 600  11100 600 
 Wire Wire Line
 	1750 1550 1200 1550
 Wire Wire Line
-	1750 2150 1150 2150
+	1750 1450 1200 1450
+Wire Wire Line
+	1750 1350 1200 1350
+Wire Wire Line
+	1750 1250 1200 1250
+Wire Wire Line
+	1750 1150 1200 1150
+Wire Notes Line
+	5800 7700 4050 7700
+Wire Notes Line
+	5800 7700 5800 6150
+Wire Notes Line
+	5800 6150 4050 6150
+Wire Wire Line
+	1900 4450 2250 4450
+Wire Wire Line
+	1900 5100 2250 5100
+Wire Wire Line
+	1900 5000 2250 5000
+Wire Wire Line
+	2250 4750 1900 4750
+Wire Wire Line
+	750  7200 1300 7200
+Wire Notes Line
+	3550 7600 3550 7450
+Wire Wire Line
+	3250 7350 3250 7600
+Wire Wire Line
+	3250 6850 3550 6850
+Wire Wire Line
+	4700 7200 4950 7200
+Connection ~ 4200 7000
+Wire Notes Line
+	4050 6150 4050 7700
+Wire Wire Line
+	4250 3650 4750 3650
+Wire Wire Line
+	4250 3550 4750 3550
+Wire Wire Line
+	6050 5000 6050 4250
+Wire Wire Line
+	5850 4800 5850 4250
+Wire Wire Line
+	4750 3350 3450 3350
+Wire Wire Line
+	7250 3750 6850 3750
+Wire Wire Line
+	6850 3250 7250 3250
+Wire Wire Line
+	6050 2050 6050 2750
+Wire Wire Line
+	5850 2300 5850 2750
+Wire Wire Line
+	5550 2550 5550 2750
+Wire Wire Line
+	5750 2650 5750 2750
+Wire Wire Line
+	7700 4050 7950 4050
+Wire Wire Line
+	2550 3350 2750 3350
+Wire Wire Line
+	3700 3850 3700 3750
+Wire Wire Line
+	3700 3750 3950 3750
+Wire Wire Line
+	4650 2850 4150 2850
+Wire Wire Line
+	4150 2850 4150 2950
+Connection ~ 4400 2850
+Wire Wire Line
+	4750 3250 4400 3250
+Connection ~ 3700 3350
+Wire Wire Line
+	7950 4050 7950 4150
+Wire Wire Line
+	5650 2400 5650 2750
+Wire Wire Line
+	5450 2650 5450 2750
+Wire Wire Line
+	5950 2200 5950 2750
+Wire Wire Line
+	5650 4250 5650 4600
+Wire Wire Line
+	6850 3350 7250 3350
+Wire Wire Line
+	7250 3550 6850 3550
+Wire Wire Line
+	5750 4700 5750 4250
+Wire Wire Line
+	5950 4900 5950 4250
+Wire Wire Line
+	4250 3450 4750 3450
+Wire Wire Line
+	4250 3750 4750 3750
+Wire Wire Line
+	4700 7000 4950 7000
+Wire Wire Line
+	4200 7200 4200 6900
+Wire Notes Line
+	600  6150 3950 6150
+Wire Notes Line
+	600  6150 600  7700
+Wire Notes Line
+	600  7700 3950 7700
+Wire Notes Line
+	3950 7700 3950 6150
+Connection ~ 3400 6850
+Wire Wire Line
+	3550 7600 2700 7600
+Connection ~ 3250 7600
+Wire Notes Line
+	3550 7350 3550 7400
+Wire Notes Line
+	3550 7450 3500 7400
+Wire Notes Line
+	3550 7450 3600 7400
+Wire Notes Line
+	3600 7400 3500 7400
+Wire Notes Line
+	3500 7450 3600 7450
+Wire Wire Line
+	1900 4650 2250 4650
+Wire Wire Line
+	1900 4350 2250 4350
+Wire Notes Line
+	600  5900 3300 5900
+Wire Notes Line
+	600  5900 600  3850
+Wire Notes Line
+	600  3850 3300 3850
+Wire Notes Line
+	3300 3850 3300 5900
+Wire Wire Line
+	1200 1050 1750 1050
+Wire Wire Line
+	1750 1750 1200 1750
+Wire Wire Line
+	1750 1850 1200 1850
+Wire Wire Line
+	1750 1950 1200 1950
+Wire Notes Line
+	3300 600  600  600 
+Wire Notes Line
+	3300 600  3300 2900
+Wire Notes Line
+	3300 2900 600  2900
+Wire Notes Line
+	600  2900 600  600 
+Wire Wire Line
+	1200 2050 1750 2050
+Wire Wire Line
+	10200 6450 10200 5850
+Connection ~ 10200 6100
+Wire Wire Line
+	10800 6450 10800 5850
+Connection ~ 10800 6100
+Wire Wire Line
+	1200 2150 1750 2150
+Text Notes 9650 5400 0    100  ~ 20
+Clock Source
+$Comp
+L DGND #PWR?
+U 1 1 4E810D67
+P 10800 6850
+F 0 "#PWR?" H 10800 6850 40  0001 C CNN
+F 1 "DGND" H 10800 6780 40  0000 C CNN
+	1    10800 6850
+	1    0    0    -1  
+$EndComp
+$Comp
+L DGND #PWR?
+U 1 1 4E810D64
+P 10200 6850
+F 0 "#PWR?" H 10200 6850 40  0001 C CNN
+F 1 "DGND" H 10200 6780 40  0000 C CNN
+	1    10200 6850
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C?
+U 1 1 4E810D47
+P 10800 6650
+F 0 "C?" H 10850 6750 50  0000 L CNN
+F 1 "22pF" H 10850 6550 50  0000 L CNN
+	1    10800 6650
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C?
+U 1 1 4E810D43
+P 10200 6650
+F 0 "C?" H 10250 6750 50  0000 L CNN
+F 1 "22pF" H 10250 6550 50  0000 L CNN
+	1    10200 6650
+	1    0    0    -1  
+$EndComp
+Text Label 10800 5850 0    60   ~ 0
+XO
+Text Label 10200 5850 0    60   ~ 0
+XI
+$Comp
+L CRYSTAL X?
+U 1 1 4E810CF7
+P 10500 6100
+F 0 "X?" H 10500 6250 60  0000 C CNN
+F 1 "25MHz" H 10500 5950 60  0000 C CNN
+	1    10500 6100
+	1    0    0    -1  
+$EndComp
+Text Label 5550 4500 2    60   ~ 0
+XO
+Text Label 7250 3450 2    60   ~ 0
+REF_CLK
+Text Label 1750 2050 2    60   ~ 0
+INTRP
+Text HLabel 1200 2050 0    60   Output ~ 0
+INTRP
+Text Notes 7600 800  0    100  ~ 20
+NOTES:
+Text Notes 700  800  0    100  ~ 20
+External Connections
 Text Label 1750 2150 2    60   ~ 0
 RST
 Text Label 1750 1950 2    60   ~ 0
-CLK_INPUT
+REF_CLK
 Text Label 1750 1850 2    60   ~ 0
 MDIO
 Text Label 1750 1750 2    60   ~ 0
@@ -253,13 +350,6 @@ F4 "Phy_recv-" B R 1900 4750 60
 F5 "Phy_recv+" B R 1900 4650 60 
 F6 "Phy_trans-" B R 1900 5100 60 
 F7 "Phy_trans+" B R 1900 5000 60 
-$EndSheet
-$Sheet
-S 8050 6150 950  800 
-U 4E7E0C7F
-F0 "Clock Source" 60
-F1 "clockSources.sch" 60
-F2 "50Mhz" O L 8050 6600 60 
 $EndSheet
 $Comp
 L +3.3V #PWR?
@@ -367,17 +457,13 @@ F 1 "6.49K" V 7500 3350 50  0000 C CNN
 	1    7500 3350
 	0    1    1    0   
 $EndComp
-NoConn ~ 5550 4250
-NoConn ~ 6850 3450
-Text Label 7350 6600 0    60   ~ 0
-CLK_INPUT
 Text HLabel 1200 1950 0    60   Input ~ 0
 RMII_CLK
 Text HLabel 1200 1750 0    60   Input ~ 0
 MDC
 Text HLabel 1200 1850 0    60   BiDi ~ 0
 MDIO
-Text HLabel 1150 2150 0    60   Input ~ 0
+Text HLabel 1200 2150 0    60   Input ~ 0
 RST
 Text HLabel 1200 1550 0    60   Output ~ 0
 CRS_DV
@@ -391,7 +477,7 @@ Text HLabel 1200 1150 0    60   Input ~ 0
 TXD0
 Text HLabel 1200 1050 0    60   Input ~ 0
 TXEN
-Text Notes 6650 1400 0    60   ~ 0
+Text Notes 7700 950  0    60   ~ 0
 REF_CLK: NC=50MHZ=RMII\nTXEN: Transmit Enable\nTXD[1:0]: TransmitData\nCRS_DV: Carrier Sense/Receive Data Valid\nRXD[1:0]: Receive Data\nRXER: Receive Error (Not Required)\nINTRP: Signals MAC when the state has changed of the recv. registers
 Text Label 7250 3250 2    60   ~ 0
 INTRP
@@ -408,7 +494,7 @@ MDIO
 Text Label 5750 4700 2    60   ~ 0
 REXT
 Text Label 5650 4600 2    60   ~ 0
-CLK_INPUT
+XI
 Text Label 4250 3750 0    60   ~ 0
 PHY_TRAN+
 Text Label 4250 3650 0    60   ~ 0

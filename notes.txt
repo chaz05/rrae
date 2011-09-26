@@ -23,9 +23,7 @@ Parts List:
 	http://www.st.com/internet/com/TECHNICAL_RESOURCES/TECHNICAL_LITERATURE/REFERENCE_MANUAL/CD00225773.pdf
 * 3.3V Switching Vreg:
 	http://search.digikey.com/scripts/DkSearch/dksus.dll?Detail&name=296-21095-5-ND
-* 50MHz Oscillator
-	http://search.digikey.com/scripts/DkSearch/dksus.dll?Detail&name=631-1060-1-ND
-	http://www.foxonline.com/pdfs/FXO_HC73.pdf
+
 
 * Connectors
 	RJ-45 w/ Leds

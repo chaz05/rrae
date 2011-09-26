@@ -1,4 +1,4 @@
-EESchema Schematic File Version 2  date 9/24/2011 1:49:25 PM
+EESchema Schematic File Version 2  date 9/26/2011 6:52:56 PM
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -35,9 +35,9 @@ EELAYER 25  0
 EELAYER END
 $Descr A4 11700 8267
 encoding utf-8
-Sheet 1 5
+Sheet 1 4
 Title ""
-Date "24 sep 2011"
+Date "26 sep 2011"
 Rev ""
 Comp ""
 Comment1 ""
@@ -60,6 +60,7 @@ F8 "RST" I R 4250 1750 60
 F9 "RMII_CLK" I R 4250 2050 60 
 F10 "MDC" I R 4250 2150 60 
 F11 "MDIO" B R 4250 2250 60 
+F12 "INTRP" O R 4250 1950 60 
 $EndSheet
 $Sheet
 S 5050 2050 3050 2950
