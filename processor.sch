@@ -1,4 +1,4 @@
-EESchema Schematic File Version 2  date 9/26/2011 8:30:03 PM
+EESchema Schematic File Version 2  date 9/26/2011 11:46:43 PM
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -35,7 +35,7 @@ EELAYER 25  0
 EELAYER END
 $Descr A4 11700 8267
 encoding utf-8
-Sheet 4 4
+Sheet 4 5
 Title ""
 Date "27 sep 2011"
 Rev ""
@@ -45,8 +45,24 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-Text Notes 550  650  0    100  ~ 20
-Ehternet Conn.
+Text Label 6850 1050 3    60   ~ 0
+SDIO_CMD
+Wire Wire Line
+	6850 1500 6850 1050
+Wire Wire Line
+	7250 1500 7250 1050
+Wire Wire Line
+	8350 2900 8750 2900
+Wire Notes Line
+	500  2950 500  1700
+Wire Notes Line
+	500  2950 1850 2950
+Wire Notes Line
+	1850 2950 1850 1700
+Wire Notes Line
+	1850 1700 500  1700
+Wire Wire Line
+	1250 2500 1800 2500
 Wire Notes Line
 	500  1600 500  500 
 Wire Notes Line
@@ -147,6 +163,60 @@ Wire Wire Line
 	1200 1350 1800 1350
 Wire Wire Line
 	1200 1550 1800 1550
+Wire Wire Line
+	1250 2050 1800 2050
+Wire Wire Line
+	1250 2150 1800 2150
+Wire Wire Line
+	1250 2250 1800 2250
+Wire Wire Line
+	1250 2350 1800 2350
+Wire Wire Line
+	1250 2600 1800 2600
+Wire Wire Line
+	8350 3000 8750 3000
+Wire Wire Line
+	7350 1050 7350 1500
+Wire Wire Line
+	7150 1500 7150 1050
+Text Label 7150 1050 3    60   ~ 0
+SDIO_CLK
+Text Label 7250 1050 3    60   ~ 0
+SDIO_D3
+Text Label 7350 1050 3    60   ~ 0
+SDIO_D2
+Text Label 8750 2900 2    60   ~ 0
+SDIO_D1
+Text Label 8750 3000 2    60   ~ 0
+SDIO_D0
+Text Notes 550  1850 0    100  ~ 20
+uSD Card
+Text Label 1800 2600 2    60   ~ 0
+SDIO_CLK
+Text Label 1800 2500 2    60   ~ 0
+SDIO_CMD
+Text Label 1800 2350 2    60   ~ 0
+SDIO_D3
+Text Label 1800 2250 2    60   ~ 0
+SDIO_D2
+Text Label 1800 2150 2    60   ~ 0
+SDIO_D1
+Text Label 1800 2050 2    60   ~ 0
+SDIO_D0
+$Sheet
+S 600  1950 650  850 
+U 4E815305
+F0 "uSD Card" 60
+F1 "connections.sch" 60
+F2 "uSD_Data1" I R 1250 2150 60 
+F3 "uSD_Data0" I R 1250 2050 60 
+F4 "uSD_CLK" I R 1250 2600 60 
+F5 "uSD_CMD" I R 1250 2500 60 
+F6 "uSD_Data3" I R 1250 2350 60 
+F7 "uSD_Data2" I R 1250 2250 60 
+$EndSheet
+Text Notes 550  650  0    100  ~ 20
+Ehternet Conn.
 Text Label 1800 1450 2    60   ~ 0
 PHY_MDIO
 Text Label 1800 1550 2    60   ~ 0

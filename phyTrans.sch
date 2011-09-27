@@ -1,4 +1,4 @@
-EESchema Schematic File Version 2  date 9/26/2011 8:30:03 PM
+EESchema Schematic File Version 2  date 9/26/2011 11:46:43 PM
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -35,7 +35,7 @@ EELAYER 25  0
 EELAYER END
 $Descr A4 11700 8267
 encoding utf-8
-Sheet 2 4
+Sheet 2 5
 Title "Ethernet     Author: tadams"
 Date "27 sep 2011"
 Rev "0.2"

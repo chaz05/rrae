@@ -1,3 +1,8 @@
-EESchema-DOCLIB  Version 2.0  Date: 9/26/2011 7:48:30 PM
+EESchema-DOCLIB  Version 2.0  Date: 9/26/2011 11:28:24 PM
+#
+$CMP MICROSD
+D micro SD Holder
+K uSD, SD, micro SD, micro
+$ENDCMP
 #
 #End Doc Library
