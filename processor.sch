@@ -1,4 +1,4 @@
-EESchema Schematic File Version 2  date 9/26/2011 6:52:56 PM
+EESchema Schematic File Version 2  date 9/26/2011 8:30:03 PM
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -35,9 +35,9 @@ EELAYER 25  0
 EELAYER END
 $Descr A4 11700 8267
 encoding utf-8
-Sheet 5 4
+Sheet 4 4
 Title ""
-Date "26 sep 2011"
+Date "27 sep 2011"
 Rev ""
 Comp ""
 Comment1 ""
@@ -45,69 +45,169 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-Connection ~ 2650 5600
+Text Notes 550  650  0    100  ~ 20
+Ehternet Conn.
+Wire Notes Line
+	500  1600 500  500 
+Wire Notes Line
+	500  1600 1850 1600
+Wire Notes Line
+	1850 1600 1850 500 
+Wire Notes Line
+	1850 500  500  500 
 Wire Wire Line
-	2650 5600 2650 5650
+	1200 1450 1800 1450
 Wire Wire Line
-	2500 5200 3250 5200
-Connection ~ 5450 6400
+	1200 1250 1800 1250
 Wire Wire Line
-	5550 6400 5450 6400
-Connection ~ 4150 6400
+	1200 1050 1800 1050
 Wire Wire Line
-	4250 6400 4150 6400
-Connection ~ 2850 3500
+	1200 850  1800 850 
 Wire Wire Line
-	2850 3600 2850 3500
-Connection ~ 5450 1100
+	2650 4600 3250 4600
 Wire Wire Line
-	5450 1100 5350 1100
-Connection ~ 6450 1100
+	5650 500  5650 1500
 Wire Wire Line
-	6350 1100 6450 1100
-Connection ~ 8750 3400
+	4850 6000 4850 6700
 Wire Wire Line
-	8750 3300 8750 3400
+	4650 6000 4650 6700
 Wire Wire Line
-	8800 2050 8350 2050
+	2650 5400 3250 5400
 Wire Wire Line
-	8350 2050 8350 2100
+	2050 5600 1750 5600
 Wire Wire Line
-	8750 1900 8750 2200
-Connection ~ 7750 6400
-Wire Wire Line
-	7750 6400 7750 6450
-Wire Wire Line
-	7450 6400 8050 6400
-Wire Wire Line
-	8050 6000 7550 6000
-Connection ~ 7750 6000
-Wire Wire Line
-	8350 1900 8350 2000
-Connection ~ 8750 2050
-Wire Wire Line
-	8800 3400 8350 3400
-Wire Wire Line
-	6450 1500 6450 1050
-Wire Wire Line
-	5450 1500 5450 1050
-Wire Wire Line
-	3250 3500 2800 3500
-Wire Wire Line
-	4150 6000 4150 6450
+	3250 5100 3250 5200
 Wire Wire Line
 	5450 6000 5450 6450
 Wire Wire Line
-	3250 5200 3250 5100
+	4150 6000 4150 6450
 Wire Wire Line
-	2800 5600 2500 5600
+	3250 3500 2800 3500
+Wire Wire Line
+	5450 1500 5450 1050
+Wire Wire Line
+	6450 1500 6450 1050
+Wire Wire Line
+	8800 3400 8350 3400
+Connection ~ 8750 2050
+Wire Wire Line
+	8350 1900 8350 2000
+Connection ~ 7750 6000
+Wire Wire Line
+	8050 6000 7550 6000
+Wire Wire Line
+	7450 6400 8050 6400
+Wire Wire Line
+	7750 6400 7750 6450
+Connection ~ 7750 6400
+Wire Wire Line
+	8750 1900 8750 2200
+Wire Wire Line
+	8350 2100 8350 2050
+Wire Wire Line
+	8350 2050 8800 2050
+Wire Wire Line
+	8750 3300 8750 3400
+Connection ~ 8750 3400
+Wire Wire Line
+	6350 1100 6450 1100
+Connection ~ 6450 1100
+Wire Wire Line
+	5450 1100 5350 1100
+Connection ~ 5450 1100
+Wire Wire Line
+	2850 3600 2850 3500
+Connection ~ 2850 3500
+Wire Wire Line
+	4250 6400 4150 6400
+Connection ~ 4150 6400
+Wire Wire Line
+	5550 6400 5450 6400
+Connection ~ 5450 6400
+Wire Wire Line
+	1900 5600 1900 5650
+Connection ~ 1900 5600
+Wire Wire Line
+	3250 5200 1750 5200
+Wire Wire Line
+	2650 5500 3250 5500
+Wire Wire Line
+	4750 6700 4750 6000
+Wire Wire Line
+	5850 1500 5850 800 
+Wire Wire Line
+	5550 500  5550 1500
+Wire Wire Line
+	1800 750  1200 750 
+Wire Wire Line
+	1200 950  1800 950 
+Wire Wire Line
+	1200 1150 1800 1150
+Wire Wire Line
+	1200 1350 1800 1350
+Wire Wire Line
+	1200 1550 1800 1550
+Text Label 1800 1450 2    60   ~ 0
+PHY_MDIO
+Text Label 1800 1550 2    60   ~ 0
+PHY_REF_CLK
+Text Label 1800 1350 2    60   ~ 0
+PHY_MDC
+Text Label 1800 1250 2    60   ~ 0
+PHY_CRS_DV
+Text Label 1800 1150 2    60   ~ 0
+PHY_TX_EN
+Text Label 1800 1050 2    60   ~ 0
+PHY_RxD1
+Text Label 1800 950  2    60   ~ 0
+PHY_RxD0
+Text Label 1800 850  2    60   ~ 0
+PHY_TXD1
+Text Label 1800 750  2    60   ~ 0
+PHY_TXD0
+Text HLabel 1200 1550 0    60   Input ~ 0
+PHY_REF_CLK
+Text HLabel 1200 1450 0    60   Input ~ 0
+PHY_MDIO
+Text HLabel 1200 1350 0    60   Input ~ 0
+PHY_MDC
+Text HLabel 1200 1250 0    60   Input ~ 0
+PHY_CRS_DV
+Text HLabel 1200 1150 0    60   Input ~ 0
+PHY_TxEn
+Text HLabel 1200 1050 0    60   Input ~ 0
+PHY_RXD1
+Text HLabel 1200 950  0    60   Input ~ 0
+PHY_RXD0
+Text HLabel 1200 850  0    60   Input ~ 0
+PHY_TXD1
+Text HLabel 1200 750  0    60   Input ~ 0
+PHY_TXD0
+Text Label 2650 4600 0    60   ~ 0
+PHY_MDC
+Text Label 5550 500  3    60   ~ 0
+PHY_TxD1
+Text Label 5650 500  3    60   ~ 0
+PHY_TxD0
+Text Label 5850 800  3    60   ~ 0
+PHY_TX_EN
+Text Label 4850 6700 1    60   ~ 0
+PHY_RxD1
+Text Label 4750 6700 1    60   ~ 0
+PHY_RxD0
+Text Label 4650 6700 1    60   ~ 0
+PHY_CRS_DV
+Text Label 2650 5500 0    60   ~ 0
+PHY_MDIO
+Text Label 2650 5400 0    60   ~ 0
+PHY_REF_CLK
 $Comp
 L AGND #PWR?
 U 1 1 4E7A79E4
-P 2650 5650
-F 0 "#PWR?" H 2650 5650 40  0001 C CNN
-F 1 "AGND" H 2650 5580 50  0000 C CNN
-	1    2650 5650
+P 1900 5650
+F 0 "#PWR?" H 1900 5650 40  0001 C CNN
+F 1 "AGND" H 1900 5580 50  0000 C CNN
+	1    1900 5650
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -122,23 +222,23 @@ $EndComp
 $Comp
 L C C?
 U 1 1 4E7A79A2
-P 2800 5400
-F 0 "C?" H 2850 5500 50  0000 L CNN
-F 1 "1uF" H 2850 5300 50  0000 L CNN
-F 2 "0603" H 2800 5400 60  0000 C CNN
-F 4 "445-1322-1-ND" H 2800 5400 60  0001 C CNN "Digikey PN"
-	1    2800 5400
+P 2050 5400
+F 0 "C?" H 2100 5500 50  0000 L CNN
+F 1 "1uF" H 2100 5300 50  0000 L CNN
+F 2 "0603" H 2050 5400 60  0000 C CNN
+F 4 "445-1322-1-ND" H 2050 5400 60  0001 C CNN "Digikey PN"
+	1    2050 5400
 	1    0    0    -1  
 $EndComp
 $Comp
 L C C?
 U 1 1 4E7A795F
-P 2500 5400
-F 0 "C?" H 2550 5500 50  0000 L CNN
-F 1 "10nF" H 2550 5300 50  0000 L CNN
-F 2 "0603" H 2500 5400 60  0000 C CNN
-F 4 "445-5100-1-ND" H 2500 5400 60  0001 C CNN "Digikey PN"
-	1    2500 5400
+P 1750 5400
+F 0 "C?" H 1800 5500 50  0000 L CNN
+F 1 "10nF" H 1800 5300 50  0000 L CNN
+F 2 "0603" H 1750 5400 60  0000 C CNN
+F 4 "445-5100-1-ND" H 1750 5400 60  0001 C CNN "Digikey PN"
+	1    1750 5400
 	1    0    0    -1  
 $EndComp
 $Comp
