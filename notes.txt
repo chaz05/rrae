@@ -1,5 +1,5 @@
 TODO: 
-	[ ] Reset Schematic.  Example in the Eth Phy Datasheet
+	[x] Reset Schematic.  Example in the Eth Phy Datasheet
 
 
 Power Budget

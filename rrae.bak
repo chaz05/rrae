@@ -1,4 +1,4 @@
-EESchema Schematic File Version 2  date 9/26/2011 11:37:02 PM
+EESchema Schematic File Version 2  date 9/27/2011 12:39:26 AM
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -35,7 +35,7 @@ EELAYER 25  0
 EELAYER END
 $Descr A4 11700 8267
 encoding utf-8
-Sheet 1 4
+Sheet 1 7
 Title ""
 Date "27 sep 2011"
 Rev ""
@@ -45,6 +45,18 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
+Wire Wire Line
+	3150 3500 3050 3500
+Wire Wire Line
+	3050 3500 3050 1100
+Wire Wire Line
+	3050 1100 1650 1100
+Wire Wire Line
+	5500 3400 4200 3400
+Wire Wire Line
+	4200 3400 4200 3600
+Wire Wire Line
+	4200 3600 4050 3600
 Wire Wire Line
 	5500 3200 3150 3200
 Wire Wire Line
@@ -99,6 +111,21 @@ Wire Wire Line
 	3250 3100 3250 2250
 Wire Wire Line
 	3250 2250 1650 2250
+Wire Wire Line
+	4050 3700 4300 3700
+Wire Wire Line
+	4300 3700 4300 3500
+Wire Wire Line
+	4300 3500 5500 3500
+$Sheet
+S 3150 3350 900  450 
+U 4E815C62
+F0 "Reset Circuit" 60
+F1 "reset.sch" 60
+F2 "ResetInput" I R 4050 3600 60 
+F3 "SoftResetOutput" I L 3150 3500 60 
+F4 "MasterReset" I R 4050 3700 60 
+$EndSheet
 $Sheet
 S 750  850  900  1550
 U 4E7A8C23
@@ -130,5 +157,7 @@ F7 "PHY_RXD1" I L 5500 2900 60
 F8 "PHY_RXD0" I L 5500 2800 60 
 F9 "PHY_TXD1" I L 5500 3200 60 
 F10 "PHY_TXD0" I L 5500 3100 60 
+F11 "SoftReset" I L 5500 3400 60 
+F12 "Reset" I L 5500 3500 60 
 $EndSheet
 $EndSCHEMATC

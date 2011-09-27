@@ -1,4 +1,4 @@
-EESchema Schematic File Version 2  date 9/26/2011 11:46:43 PM
+EESchema Schematic File Version 2  date 9/27/2011 12:42:11 AM
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -35,7 +35,7 @@ EELAYER 25  0
 EELAYER END
 $Descr A4 11700 8267
 encoding utf-8
-Sheet 4 5
+Sheet 6 7
 Title ""
 Date "27 sep 2011"
 Rev ""
@@ -45,140 +45,168 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-Text Label 6850 1050 3    60   ~ 0
-SDIO_CMD
-Wire Wire Line
-	6850 1500 6850 1050
-Wire Wire Line
-	7250 1500 7250 1050
-Wire Wire Line
-	8350 2900 8750 2900
 Wire Notes Line
-	500  2950 500  1700
+	500  3850 500  3400
 Wire Notes Line
-	500  2950 1850 2950
+	500  3850 1850 3850
+Wire Wire Line
+	1050 3800 1500 3800
 Wire Notes Line
-	1850 2950 1850 1700
+	500  3400 1850 3400
 Wire Notes Line
-	1850 1700 500  1700
-Wire Wire Line
-	1250 2500 1800 2500
+	1850 3300 1850 1700
 Wire Notes Line
-	500  1600 500  500 
+	1850 3300 500  3300
 Wire Notes Line
-	500  1600 1850 1600
-Wire Notes Line
-	1850 1600 1850 500 
-Wire Notes Line
-	1850 500  500  500 
+	500  3300 500  1700
 Wire Wire Line
-	1200 1450 1800 1450
-Wire Wire Line
-	1200 1250 1800 1250
-Wire Wire Line
-	1200 1050 1800 1050
-Wire Wire Line
-	1200 850  1800 850 
-Wire Wire Line
-	2650 4600 3250 4600
-Wire Wire Line
-	5650 500  5650 1500
-Wire Wire Line
-	4850 6000 4850 6700
-Wire Wire Line
-	4650 6000 4650 6700
-Wire Wire Line
-	2650 5400 3250 5400
-Wire Wire Line
-	2050 5600 1750 5600
-Wire Wire Line
-	3250 5100 3250 5200
-Wire Wire Line
-	5450 6000 5450 6450
-Wire Wire Line
-	4150 6000 4150 6450
-Wire Wire Line
-	3250 3500 2800 3500
-Wire Wire Line
-	5450 1500 5450 1050
-Wire Wire Line
-	6450 1500 6450 1050
-Wire Wire Line
-	8800 3400 8350 3400
-Connection ~ 8750 2050
-Wire Wire Line
-	8350 1900 8350 2000
-Connection ~ 7750 6000
-Wire Wire Line
-	8050 6000 7550 6000
-Wire Wire Line
-	7450 6400 8050 6400
-Wire Wire Line
-	7750 6400 7750 6450
-Connection ~ 7750 6400
-Wire Wire Line
-	8750 1900 8750 2200
-Wire Wire Line
-	8350 2100 8350 2050
-Wire Wire Line
-	8350 2050 8800 2050
-Wire Wire Line
-	8750 3300 8750 3400
-Connection ~ 8750 3400
-Wire Wire Line
-	6350 1100 6450 1100
-Connection ~ 6450 1100
-Wire Wire Line
-	5450 1100 5350 1100
-Connection ~ 5450 1100
-Wire Wire Line
-	2850 3600 2850 3500
-Connection ~ 2850 3500
-Wire Wire Line
-	4250 6400 4150 6400
-Connection ~ 4150 6400
-Wire Wire Line
-	5550 6400 5450 6400
-Connection ~ 5450 6400
-Wire Wire Line
-	1900 5600 1900 5650
-Connection ~ 1900 5600
-Wire Wire Line
-	3250 5200 1750 5200
-Wire Wire Line
-	2650 5500 3250 5500
-Wire Wire Line
-	4750 6700 4750 6000
-Wire Wire Line
-	5850 1500 5850 800 
-Wire Wire Line
-	5550 500  5550 1500
-Wire Wire Line
-	1800 750  1200 750 
-Wire Wire Line
-	1200 950  1800 950 
-Wire Wire Line
-	1200 1150 1800 1150
-Wire Wire Line
-	1200 1350 1800 1350
-Wire Wire Line
-	1200 1550 1800 1550
-Wire Wire Line
-	1250 2050 1800 2050
-Wire Wire Line
-	1250 2150 1800 2150
-Wire Wire Line
-	1250 2250 1800 2250
-Wire Wire Line
-	1250 2350 1800 2350
-Wire Wire Line
-	1250 2600 1800 2600
-Wire Wire Line
-	8350 3000 8750 3000
+	7150 1500 7150 1050
 Wire Wire Line
 	7350 1050 7350 1500
 Wire Wire Line
-	7150 1500 7150 1050
+	8350 3000 8750 3000
+Wire Wire Line
+	1250 3000 1800 3000
+Wire Wire Line
+	1250 2750 1800 2750
+Wire Wire Line
+	1250 2650 1800 2650
+Wire Wire Line
+	1250 2550 1800 2550
+Wire Wire Line
+	1250 2450 1800 2450
+Wire Wire Line
+	1200 1550 1800 1550
+Wire Wire Line
+	1200 1350 1800 1350
+Wire Wire Line
+	1200 1150 1800 1150
+Wire Wire Line
+	1200 950  1800 950 
+Wire Wire Line
+	1800 750  1200 750 
+Wire Wire Line
+	5550 500  5550 1500
+Wire Wire Line
+	5850 1500 5850 800 
+Wire Wire Line
+	4750 6700 4750 6000
+Wire Wire Line
+	2650 5500 3250 5500
+Wire Wire Line
+	1750 5200 3250 5200
+Connection ~ 1900 5600
+Wire Wire Line
+	1900 5600 1900 5650
+Connection ~ 5450 6400
+Wire Wire Line
+	5550 6400 5450 6400
+Connection ~ 4150 6400
+Wire Wire Line
+	4250 6400 4150 6400
+Connection ~ 2850 3500
+Wire Wire Line
+	2850 3600 2850 3500
+Connection ~ 5450 1100
+Wire Wire Line
+	5450 1100 5350 1100
+Connection ~ 6450 1100
+Wire Wire Line
+	6350 1100 6450 1100
+Connection ~ 8750 3400
+Wire Wire Line
+	8750 3300 8750 3400
+Wire Wire Line
+	8800 2050 8350 2050
+Wire Wire Line
+	8350 2050 8350 2100
+Wire Wire Line
+	8750 1900 8750 2200
+Connection ~ 7750 6400
+Wire Wire Line
+	7750 6400 7750 6450
+Wire Wire Line
+	7450 6400 8050 6400
+Wire Wire Line
+	8050 6000 7550 6000
+Connection ~ 7750 6000
+Wire Wire Line
+	8350 1900 8350 2000
+Connection ~ 8750 2050
+Wire Wire Line
+	8800 3400 8350 3400
+Wire Wire Line
+	6450 1500 6450 1050
+Wire Wire Line
+	5450 1500 5450 1050
+Wire Wire Line
+	3250 3500 2800 3500
+Wire Wire Line
+	4150 6000 4150 6450
+Wire Wire Line
+	5450 6000 5450 6450
+Wire Wire Line
+	3250 5200 3250 5100
+Wire Wire Line
+	2050 5600 1750 5600
+Wire Wire Line
+	2650 5400 3250 5400
+Wire Wire Line
+	4650 6000 4650 6700
+Wire Wire Line
+	4850 6000 4850 6700
+Wire Wire Line
+	5650 500  5650 1500
+Wire Wire Line
+	2650 4600 3250 4600
+Wire Wire Line
+	1200 850  1800 850 
+Wire Wire Line
+	1200 1050 1800 1050
+Wire Wire Line
+	1200 1250 1800 1250
+Wire Wire Line
+	1200 1450 1800 1450
+Wire Notes Line
+	1850 500  500  500 
+Wire Notes Line
+	1850 500  1850 1600
+Wire Notes Line
+	1850 1600 500  1600
+Wire Notes Line
+	500  1600 500  500 
+Wire Wire Line
+	1250 2900 1800 2900
+Wire Notes Line
+	500  1700 1850 1700
+Wire Wire Line
+	8350 2900 8750 2900
+Wire Wire Line
+	7250 1500 7250 1050
+Wire Wire Line
+	6850 1500 6850 1050
+Wire Wire Line
+	3250 4400 2650 4400
+Wire Wire Line
+	1500 3650 1050 3650
+Wire Notes Line
+	1850 3400 1850 3850
+Text Label 1500 3800 2    60   ~ 0
+SoftReset
+Text HLabel 1050 3800 0    60   Input ~ 0
+SoftReset
+Text Label 1500 3650 2    60   ~ 0
+Reset
+Text HLabel 1050 3650 0    60   Input ~ 0
+Reset
+Text Notes 550  3550 0    100  ~ 20
+Reset
+Text Label 2650 4400 0    60   ~ 0
+Reset
+Text Notes 600  1950 0    60   ~ 0
+notes:  Can be run in SPI\n   mode by only using D0 \n   and D1 as the Data In \n   and Data Out
+Text Label 6850 1050 3    60   ~ 0
+SDIO_CMD
 Text Label 7150 1050 3    60   ~ 0
 SDIO_CLK
 Text Label 7250 1050 3    60   ~ 0
@@ -191,29 +219,29 @@ Text Label 8750 3000 2    60   ~ 0
 SDIO_D0
 Text Notes 550  1850 0    100  ~ 20
 uSD Card
-Text Label 1800 2600 2    60   ~ 0
+Text Label 1800 3000 2    60   ~ 0
 SDIO_CLK
-Text Label 1800 2500 2    60   ~ 0
+Text Label 1800 2900 2    60   ~ 0
 SDIO_CMD
-Text Label 1800 2350 2    60   ~ 0
+Text Label 1800 2750 2    60   ~ 0
 SDIO_D3
-Text Label 1800 2250 2    60   ~ 0
+Text Label 1800 2650 2    60   ~ 0
 SDIO_D2
-Text Label 1800 2150 2    60   ~ 0
+Text Label 1800 2550 2    60   ~ 0
 SDIO_D1
-Text Label 1800 2050 2    60   ~ 0
+Text Label 1800 2450 2    60   ~ 0
 SDIO_D0
 $Sheet
-S 600  1950 650  850 
+S 600  2350 650  850 
 U 4E815305
 F0 "uSD Card" 60
 F1 "connections.sch" 60
-F2 "uSD_Data1" I R 1250 2150 60 
-F3 "uSD_Data0" I R 1250 2050 60 
-F4 "uSD_CLK" I R 1250 2600 60 
-F5 "uSD_CMD" I R 1250 2500 60 
-F6 "uSD_Data3" I R 1250 2350 60 
-F7 "uSD_Data2" I R 1250 2250 60 
+F2 "uSD_Data1" I R 1250 2550 60 
+F3 "uSD_Data0" I R 1250 2450 60 
+F4 "uSD_CLK" I R 1250 3000 60 
+F5 "uSD_CMD" I R 1250 2900 60 
+F6 "uSD_Data3" I R 1250 2750 60 
+F7 "uSD_Data2" I R 1250 2650 60 
 $EndSheet
 Text Notes 550  650  0    100  ~ 20
 Ehternet Conn.
