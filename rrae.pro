@@ -1,4 +1,4 @@
-update=9/24/2011 11:56:55 AM
+update=9/26/2011 7:47:47 PM
 version=1
 last_client=eeschema
 [cvpcb]
