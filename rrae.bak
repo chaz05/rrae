@@ -1,4 +1,4 @@
-EESchema Schematic File Version 2  date 10/14/2011 11:59:51 PM
+EESchema Schematic File Version 2  date 10/15/2011 10:14:08 AM
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -46,7 +46,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Sheet
-S 1700 5200 3400 2550
+S 1850 4450 3400 2550
 U 4E98DB6D
 F0 "devBoardPinout.sch" 60
 F1 "Dev Board.sch" 60
